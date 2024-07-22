@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Main container for the game -->
+  <div id="container">
+    
+    <!-- Header section containing health bars and timer -->
+    <div id="header">
+      
+      <!-- Player health bar -->
+      <div id="playerHealthContainer" class="healthBar">
+        <div class="health"></div>
+        <div id="playerHealth" class="healthFill" style="width: 100%; right: 0;"></div>
+      </div>
+
+      <!-- Timer display -->
+      <div id="timer">90</div>
+
+      <!-- Enemy health bar -->
+      <div id="enemyHealthContainer" class="healthBar">
+        <div class="health"></div>
+        <div id="enemyHealth" class="healthFill" style="width: 100%; left: 0;"></div>
+      </div>
+    </div>
+
+    <!-- Display text area -->
+    <div id="displayText">
+      <span></span>
+    </div>
+
+    <!-- Play Again button -->
+    <button id="playAgainButton">Play Again</button>
+
+
+    <!-- Canvas for game rendering -->
+    <canvas></canvas>
+  </div>
+
+  <!-- External JavaScript libraries and scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/classes.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
